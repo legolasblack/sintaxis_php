@@ -32,18 +32,21 @@ class Persona{
 		echo "direccion: ".self::$empresa."<br>";
 		echo "----------------------------------------------";
 	}
-	static function get_empresa($emp){
+	static function set_empresa($emp){
 		self::$empresa=$emp;
 	}
+	static function get_empresa(){
+		return self::$empresa;
 	}
-	Persona::get_empresa("homi2");
+	}
+	Persona::set_empresa("homi2");
 	$empleado1=new Persona("diego","555555","agustin #25");
 	$empleado2=new Persona("sam","222222","lerdo de tejada #45");
 	$empleado3=new Persona("ragnar","333333","cloud #101");
 	$empleado1->imprimir_datos();
 	$empleado2->imprimir_datos();
 	$empleado3->imprimir_datos();
-	Persona::get_empresa("homi2");
+	Persona::get_empresa();
 	//esta linea es la que accede a la variable estatica
 	//y nos permite moificarla sin utilizar una instancia
 	$empleado1->imprimir_datos();

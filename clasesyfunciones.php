@@ -31,7 +31,7 @@ class Miclase{
 	function modificarvariables($valor){//esta funcion puede recibir un parametro;
 		$this->var1=$valor;
 		echo $this->var1."<br>";
-		return $var1;//Esta linea retorna el valor uno en la llamda de la funcion;
+		return $this->var1;//Esta linea retorna el valor uno en la llamda de la funcion;
 	}
 
 }

@@ -8,6 +8,6 @@
 <body>
     <?php
         echo("hello word, how are you?");
-    <?>
+    ?>
 </body>
 </html>
